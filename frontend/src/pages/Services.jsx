@@ -108,6 +108,11 @@ const process = [
 export default function Services() {
   return (
     <div className="bg-[#0A0A0A] pt-20" data-testid="services-page">
+      <SEO 
+        title="SEO Services for Local Businesses"
+        description="Local SEO, technical SEO, on-page optimisation, and PPC advertising services. We help UK businesses rank higher on Google and get more customers."
+        canonical="/services"
+      />
       {/* Hero Section */}
       <section className="py-24 md:py-32 border-b border-white/10" data-testid="services-hero">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
