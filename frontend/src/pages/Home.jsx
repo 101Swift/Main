@@ -170,15 +170,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Trades Choose Us */}
+      {/* Why Local Businesses Choose Us */}
       <section className="py-24 md:py-32 bg-[#121212]" data-testid="features-section">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center mb-16">
             <span className="text-[#FF5500] text-sm font-medium uppercase tracking-widest mb-4 block">
-              Why Trades Choose Us
+              Why Local Businesses Choose Us
             </span>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight uppercase text-white mb-4">
-              Simple SEO Focused on Enquiries
+              Simple SEO Focused on Results
             </h2>
             <p className="text-zinc-400 max-w-2xl mx-auto">
               Not jargon. Real results that grow your business.
