@@ -342,6 +342,67 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Resources Section */}
+      <section className="py-24 md:py-32" data-testid="resources-section">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <div className="text-center mb-16">
+            <span className="text-[#FF5500] text-sm font-medium uppercase tracking-widest mb-4 block">
+              Free Resources
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight uppercase text-white mb-4">
+              Helpful Guides
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Link 
+              to="/free-website-audit"
+              className="bg-[#FF5500]/10 border border-[#FF5500]/20 p-8 hover:border-[#FF5500] transition-all duration-300 group"
+            >
+              <h3 className="text-xl font-semibold uppercase text-white mb-3 group-hover:text-[#FF5500] transition-colors">
+                Free Website Audit
+              </h3>
+              <p className="text-zinc-400 text-sm mb-4">
+                Find out why your website isn't ranking and get a clear plan to fix it.
+              </p>
+              <span className="text-[#FF5500] text-sm font-medium uppercase tracking-wider flex items-center gap-2">
+                Get Your Free Audit <ArrowRight className="w-4 h-4" />
+              </span>
+            </Link>
+
+            <Link 
+              to="/website-design-cost"
+              className="bg-[#121212] border border-white/10 p-8 hover:border-[#FF5500] transition-all duration-300 group"
+            >
+              <h3 className="text-xl font-semibold uppercase text-white mb-3 group-hover:text-[#FF5500] transition-colors">
+                Website Design Cost
+              </h3>
+              <p className="text-zinc-400 text-sm mb-4">
+                Transparent pricing. See exactly what a website costs and what you get.
+              </p>
+              <span className="text-[#FF5500] text-sm font-medium uppercase tracking-wider flex items-center gap-2">
+                View Pricing <ArrowRight className="w-4 h-4" />
+              </span>
+            </Link>
+
+            <Link 
+              to="/seo-vs-ppc"
+              className="bg-[#121212] border border-white/10 p-8 hover:border-[#FF5500] transition-all duration-300 group"
+            >
+              <h3 className="text-xl font-semibold uppercase text-white mb-3 group-hover:text-[#FF5500] transition-colors">
+                SEO vs PPC
+              </h3>
+              <p className="text-zinc-400 text-sm mb-4">
+                Not sure which to invest in? We break down the pros and cons of each.
+              </p>
+              <span className="text-[#FF5500] text-sm font-medium uppercase tracking-wider flex items-center gap-2">
+                Compare Options <ArrowRight className="w-4 h-4" />
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-24 md:py-32 relative overflow-hidden" data-testid="cta-section">
         <div className="absolute inset-0 bg-gradient-to-r from-[#FF5500]/10 to-transparent" />
