@@ -14,6 +14,8 @@ import Contact from "@/pages/Contact";
 import Admin from "@/pages/Admin";
 import LocationPage from "@/pages/LocationPage";
 import IndustryPage from "@/pages/IndustryPage";
+import GetMoreCustomers from "@/pages/GetMoreCustomers";
+import WhyNotOnGoogle from "@/pages/WhyNotOnGoogle";
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/locations/:slug" element={<LocationPage />} />
+            <Route path="/get-more-customers" element={<GetMoreCustomers />} />
+            <Route path="/why-not-on-google" element={<WhyNotOnGoogle />} />
           </Routes>
         </main>
         <Footer />
