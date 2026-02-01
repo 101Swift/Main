@@ -4,6 +4,7 @@ import { Toaster } from "@/components/ui/sonner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import LiveChat from "@/components/LiveChat";
+import ScrollToTop from "@/components/ScrollToTop";
 import Home from "@/pages/Home";
 import Services from "@/pages/Services";
 import Pricing from "@/pages/Pricing";
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="min-h-screen bg-[#0A0A0A]">
       <BrowserRouter>
+        <ScrollToTop />
         <Navbar />
         <main>
           <Routes>
