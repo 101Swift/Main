@@ -4,40 +4,40 @@ import { ExternalLink, Tag } from "lucide-react";
 
 const portfolioItems = [
   {
-    title: "Timber Services",
-    desc: "Clean, premium website for a bespoke carpentry and timber services business. Built to showcase craftsmanship, build trust, and drive enquiries.",
-    tags: ["Web Design", "Trades", "Lead Generation"],
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop"
+    title: "The Corner Bistro",
+    desc: "Modern website for a local restaurant featuring online reservations, menu showcase, and Google Maps integration.",
+    tags: ["Web Design", "Restaurant", "Lead Generation"],
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop"
   },
   {
-    title: "London Electricians",
-    desc: "Fast, mobile-first website for emergency electrical services. Optimised for local search and quick contact.",
-    tags: ["Local SEO", "Electricians", "Mobile-First"],
-    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&h=600&fit=crop"
+    title: "Brighton Dental Care",
+    desc: "Professional website for a dental practice. Optimised for local search with online booking integration.",
+    tags: ["Local SEO", "Healthcare", "Mobile-First"],
+    image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&h=600&fit=crop"
   },
   {
-    title: "Surrey Plumbing Co",
-    desc: "Service-focused website with clear pricing and booking. Built to rank for local plumbing searches across Surrey.",
-    tags: ["Web Design", "Plumbers", "SEO"],
-    image: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&h=600&fit=crop"
+    title: "Urban Fitness Studio",
+    desc: "Dynamic website for a boutique gym with class schedules, membership info, and lead capture forms.",
+    tags: ["Web Design", "Fitness", "SEO"],
+    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop"
   },
   {
-    title: "Green Gardens",
-    desc: "Portfolio-style website for a landscaping business. Showcasing project galleries and seasonal services.",
-    tags: ["Landscapers", "Portfolio", "Visual"],
-    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&h=600&fit=crop"
+    title: "Bloom & Co Florist",
+    desc: "E-commerce enabled website for a local florist. Beautiful galleries and same-day delivery booking.",
+    tags: ["Retail", "E-commerce", "Visual"],
+    image: "https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=800&h=600&fit=crop"
   },
   {
-    title: "Heat Pro Solutions",
-    desc: "Lead generation website for heating engineers. Focus on boiler services and emergency callouts.",
-    tags: ["Heating", "Lead Gen", "Local SEO"],
-    image: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&h=600&fit=crop"
+    title: "Swift Legal Partners",
+    desc: "Professional services website for a law firm. Focus on trust, credibility, and consultation bookings.",
+    tags: ["Professional", "Lead Gen", "Local SEO"],
+    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop"
   },
   {
-    title: "Oxford Builders",
-    desc: "Extension and renovation specialist website. Before/after galleries and customer testimonials.",
-    tags: ["Builders", "Web Design", "Trust Signals"],
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=600&fit=crop"
+    title: "Glow Beauty Salon",
+    desc: "Stylish website for a beauty salon with service menus, online booking, and Instagram integration.",
+    tags: ["Beauty", "Web Design", "Booking"],
+    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=600&fit=crop"
   },
 ];
 
@@ -114,7 +114,7 @@ export default function Portfolio() {
             {[
               { value: "50+", label: "Websites Built" },
               { value: "200%", label: "Avg Traffic Increase" },
-              { value: "30+", label: "Trades Served" },
+              { value: "30+", label: "Industries Served" },
               { value: "98%", label: "Client Satisfaction" },
             ].map((stat, index) => (
               <div key={stat.label} data-testid={`stat-${index + 1}`}>
