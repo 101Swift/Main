@@ -437,7 +437,7 @@ const babelMetadataPlugin = ({ types: t }) => {
     // (e.g., `review` in `reviews.map((review) => ...)`)
     // Skip this check when called from getArrayIterationContext to avoid infinite recursion
     if (!skipArrayContext) {
-      const arrayContext = getArrayIterationContext(exprPath, state);
+      const arrayContext = getArrayIterationContext(exprPath, state, 0);
       if (arrayContext && arrayContext.itemParam === name) {
         return {
           type: "static-imported",
