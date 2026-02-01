@@ -218,7 +218,7 @@ export default function Contact() {
                   <Button 
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-[#FF5500] hover:bg-[#FF5500]/90 text-white font-bold uppercase tracking-wider px-8 py-6 rounded-none transition-all duration-300 hover:translate-y-[-2px] disabled:opacity-50"
+                    className="w-full bg-[#FF5500] hover:bg-[#FF5500]/90 text-white font-bold uppercase tracking-wider px-8 py-6 rounded-none transition-all duration-300 hover:translate-y-[-2px] disabled:opacity-50 relative z-10"
                     data-testid="submit-btn"
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}
