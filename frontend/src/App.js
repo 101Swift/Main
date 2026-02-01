@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "@/components/ui/sonner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import LiveChat from "@/components/LiveChat";
 import Home from "@/pages/Home";
 import Services from "@/pages/Services";
 import Pricing from "@/pages/Pricing";
@@ -26,6 +27,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <LiveChat />
         <Toaster position="top-right" />
       </BrowserRouter>
     </div>
