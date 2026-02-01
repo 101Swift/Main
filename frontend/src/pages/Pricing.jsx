@@ -89,7 +89,7 @@ export default function Pricing() {
           </span>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight uppercase text-white mb-6">
             Simple Pricing<br />
-            <span className="text-[#FF5500]">Built for Trades</span>
+            <span className="text-[#FF5500]">Built for Local Businesses</span>
           </h1>
           <p className="text-lg md:text-xl text-zinc-400 mb-8 leading-relaxed max-w-2xl mx-auto">
             Start with a one-off setup. Add monthly growth if you want consistent enquiries.
