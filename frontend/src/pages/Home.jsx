@@ -293,6 +293,55 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Problem-Aware Section */}
+      <section className="py-24 md:py-32 bg-[#121212]" data-testid="problem-section">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <div className="text-center mb-16">
+            <span className="text-[#FF5500] text-sm font-medium uppercase tracking-widest mb-4 block">
+              Not Sure Where to Start?
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight uppercase text-white mb-4">
+              We Speak Plain English
+            </h2>
+            <p className="text-zinc-400 max-w-2xl mx-auto">
+              Don't know what SEO means? No problem. We focus on results, not jargon.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Link 
+              to="/get-more-customers"
+              className="bg-[#0A0A0A] border border-white/10 p-8 hover:border-[#FF5500] transition-all duration-300 group"
+            >
+              <h3 className="text-xl font-semibold uppercase text-white mb-3 group-hover:text-[#FF5500] transition-colors">
+                "I Want More Customers"
+              </h3>
+              <p className="text-zinc-400 text-sm mb-4">
+                Learn how we help local businesses get found online and turn clicks into paying customers.
+              </p>
+              <span className="text-[#FF5500] text-sm font-medium uppercase tracking-wider flex items-center gap-2">
+                Learn More <ArrowRight className="w-4 h-4" />
+              </span>
+            </Link>
+
+            <Link 
+              to="/why-not-on-google"
+              className="bg-[#0A0A0A] border border-white/10 p-8 hover:border-[#FF5500] transition-all duration-300 group"
+            >
+              <h3 className="text-xl font-semibold uppercase text-white mb-3 group-hover:text-[#FF5500] transition-colors">
+                "Why Can't People Find Me?"
+              </h3>
+              <p className="text-zinc-400 text-sm mb-4">
+                Find out why your website isn't showing on Google and what you can do about it.
+              </p>
+              <span className="text-[#FF5500] text-sm font-medium uppercase tracking-wider flex items-center gap-2">
+                Learn More <ArrowRight className="w-4 h-4" />
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-24 md:py-32 relative overflow-hidden" data-testid="cta-section">
         <div className="absolute inset-0 bg-gradient-to-r from-[#FF5500]/10 to-transparent" />
