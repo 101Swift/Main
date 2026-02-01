@@ -26,7 +26,7 @@ export default function Navbar() {
             <img 
               src={LOGO_URL} 
               alt="Swift Website & SEO Services" 
-              className="h-10 w-auto"
+              className="h-14 w-auto"
             />
             <span className="hidden md:block text-white font-medium text-sm">
               Website & SEO Services

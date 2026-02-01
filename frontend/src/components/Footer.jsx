@@ -14,7 +14,7 @@ export default function Footer() {
               <img 
                 src={LOGO_URL} 
                 alt="Swift Website & SEO Services" 
-                className="h-10 w-auto"
+                className="h-14 w-auto"
               />
               <span className="text-white font-medium">Website & SEO Services</span>
             </Link>
