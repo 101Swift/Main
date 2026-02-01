@@ -269,14 +269,15 @@ export default function Home() {
 
           <div className="flex flex-wrap justify-center gap-4">
             {areas.map((area) => (
-              <div 
-                key={area}
-                className="flex items-center gap-2 bg-[#0A0A0A] border border-white/10 px-6 py-3 hover:border-[#FF5500] transition-colors cursor-pointer"
-                data-testid={`area-${area.toLowerCase().replace(' ', '-')}`}
+              <Link 
+                to={`/locations/${area.slug}`}
+                key={area.name}
+                className="flex items-center gap-2 bg-[#0A0A0A] border border-white/10 px-6 py-3 hover:border-[#FF5500] transition-colors cursor-pointer group"
+                data-testid={`area-${area.slug}`}
               >
                 <MapPin className="w-4 h-4 text-[#FF5500]" />
-                <span className="text-white text-sm font-medium">{area}</span>
-              </div>
+                <span className="text-white text-sm font-medium group-hover:text-[#FF5500] transition-colors">{area.name}</span>
+              </Link>
             ))}
           </div>
 
