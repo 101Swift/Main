@@ -227,7 +227,8 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {trades.map((trade, index) => (
-              <div 
+              <Link 
+                to={`/services/${trade.slug}`}
                 key={trade.name}
                 className="bg-[#121212] border border-white/10 p-6 hover:border-[#FF5500] transition-all duration-300 group cursor-pointer"
                 data-testid={`trade-card-${index + 1}`}
@@ -237,7 +238,7 @@ export default function Home() {
                     <trade.icon className="w-6 h-6 text-[#FF5500]" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold uppercase text-white mb-2">
+                    <h3 className="text-lg font-semibold uppercase text-white mb-2 group-hover:text-[#FF5500] transition-colors">
                       {trade.name}
                     </h3>
                     <p className="text-zinc-400 text-sm">
@@ -245,7 +246,7 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
