@@ -1,43 +1,37 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Tag } from "lucide-react";
+import { Tag } from "lucide-react";
 
 const portfolioItems = [
   {
-    title: "The Corner Bistro",
-    desc: "Modern website for a local restaurant featuring online reservations, menu showcase, and Google Maps integration.",
-    tags: ["Web Design", "Restaurant", "Lead Generation"],
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop"
+    title: "Timber Services",
+    desc: "Elegant, premium website for a bespoke carpentry business. Clean design showcasing craftsmanship with strong calls-to-action.",
+    tags: ["Web Design", "Carpentry", "Lead Generation"],
+    image: "https://customer-assets.emergentagent.com/job_49426a61-5ab8-4cbe-bfda-9c03f92f563c/artifacts/296j55t4_carpentry-website.png"
   },
   {
-    title: "Brighton Dental Care",
-    desc: "Professional website for a dental practice. Optimised for local search with online booking integration.",
-    tags: ["Local SEO", "Healthcare", "Mobile-First"],
-    image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&h=600&fit=crop"
+    title: "PowerPro Electricians",
+    desc: "Bold, high-converting website for London electricians. Features emergency service CTA, trust signals, and clear pricing.",
+    tags: ["Web Design", "Electricians", "Local SEO"],
+    image: "https://customer-assets.emergentagent.com/job_49426a61-5ab8-4cbe-bfda-9c03f92f563c/artifacts/f1wpodh7_electrician-website.png"
   },
   {
-    title: "Urban Fitness Studio",
-    desc: "Dynamic website for a boutique gym with class schedules, membership info, and lead capture forms.",
-    tags: ["Web Design", "Fitness", "SEO"],
-    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop"
+    title: "WebCraft Agency",
+    desc: "Modern dark-themed website for a web design agency. Professional aesthetic with smooth animations and clear service offerings.",
+    tags: ["Web Design", "Agency", "Dark Theme"],
+    image: "https://customer-assets.emergentagent.com/job_49426a61-5ab8-4cbe-bfda-9c03f92f563c/artifacts/1q8als6h_work-1.webp"
   },
   {
-    title: "Bloom & Co Florist",
-    desc: "E-commerce enabled website for a local florist. Beautiful galleries and same-day delivery booking.",
-    tags: ["Retail", "E-commerce", "Visual"],
-    image: "https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=800&h=600&fit=crop"
+    title: "CMW Roofing & Building",
+    desc: "Professional website for roofing and building services in Hampshire. Full-screen hero with compelling visuals and trust signals.",
+    tags: ["Roofing", "Building", "Lead Generation"],
+    image: "https://customer-assets.emergentagent.com/job_49426a61-5ab8-4cbe-bfda-9c03f92f563c/artifacts/4cc4zrwi_work-2.webp"
   },
   {
-    title: "Swift Legal Partners",
-    desc: "Professional services website for a law firm. Focus on trust, credibility, and consultation bookings.",
-    tags: ["Professional", "Lead Gen", "Local SEO"],
-    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop"
-  },
-  {
-    title: "Glow Beauty Salon",
-    desc: "Stylish website for a beauty salon with service menus, online booking, and Instagram integration.",
-    tags: ["Beauty", "Web Design", "Booking"],
-    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=600&fit=crop"
+    title: "LPM Carpentry",
+    desc: "Clean, service-focused website for bespoke carpentry. Showcases kitchens, media walls, and outdoor works with gallery integration.",
+    tags: ["Carpentry", "Gallery", "Services"],
+    image: "https://customer-assets.emergentagent.com/job_49426a61-5ab8-4cbe-bfda-9c03f92f563c/artifacts/tm7drsxo_work-3.webp"
   },
 ];
 
@@ -52,10 +46,10 @@ export default function Portfolio() {
               Portfolio
             </span>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight uppercase text-white mb-6">
-              Recent Work
+              Our Work
             </h1>
             <p className="text-lg md:text-xl text-zinc-400 mb-8 leading-relaxed">
-              A few examples of our work. Ask for trade-specific examples if you want.
+              Real websites we've built for real businesses. Each project designed to rank and convert.
             </p>
           </div>
         </div>
@@ -64,21 +58,21 @@ export default function Portfolio() {
       {/* Portfolio Grid */}
       <section className="py-24 md:py-32" data-testid="portfolio-grid">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {portfolioItems.map((item, index) => (
               <div 
                 key={item.title}
-                className="group bg-[#121212] border border-white/10 overflow-hidden hover:border-[#FF5500] transition-all duration-300"
+                className={`group bg-[#121212] border border-white/10 overflow-hidden hover:border-[#FF5500] transition-all duration-300 ${index === 0 ? 'md:col-span-2' : ''}`}
                 data-testid={`portfolio-item-${index + 1}`}
               >
                 {/* Image */}
-                <div className="relative h-56 overflow-hidden">
+                <div className={`relative overflow-hidden ${index === 0 ? 'h-[400px]' : 'h-64'}`}>
                   <img 
                     src={item.image} 
                     alt={item.title}
-                    className="w-full h-full object-cover brightness-75 group-hover:brightness-90 group-hover:scale-105 transition-all duration-500"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-all duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#121212] to-transparent opacity-60" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#121212] via-transparent to-transparent opacity-60" />
                 </div>
 
                 {/* Content */}
