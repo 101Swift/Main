@@ -16,6 +16,11 @@ import LocationPage from "@/pages/LocationPage";
 import IndustryPage from "@/pages/IndustryPage";
 import GetMoreCustomers from "@/pages/GetMoreCustomers";
 import WhyNotOnGoogle from "@/pages/WhyNotOnGoogle";
+import Blog from "@/pages/Blog";
+import BlogPost from "@/pages/BlogPost";
+import WebsiteDesignCost from "@/pages/WebsiteDesignCost";
+import SEOvsPPC from "@/pages/SEOvsPPC";
+import FreeWebsiteAudit from "@/pages/FreeWebsiteAudit";
 
 function App() {
   return (
@@ -36,6 +41,11 @@ function App() {
             <Route path="/locations/:slug" element={<LocationPage />} />
             <Route path="/get-more-customers" element={<GetMoreCustomers />} />
             <Route path="/why-not-on-google" element={<WhyNotOnGoogle />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/website-design-cost" element={<WebsiteDesignCost />} />
+            <Route path="/seo-vs-ppc" element={<SEOvsPPC />} />
+            <Route path="/free-website-audit" element={<FreeWebsiteAudit />} />
           </Routes>
         </main>
         <Footer />
