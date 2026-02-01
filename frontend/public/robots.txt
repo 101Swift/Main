@@ -1,0 +1,12 @@
+# robots.txt for Swift Website & SEO Services
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://swiftwebseo.co.uk/sitemap.xml
+
+# Crawl-delay (optional, be nice to servers)
+Crawl-delay: 1
+
+# Disallow admin area
+Disallow: /admin
