@@ -67,7 +67,19 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
+      // Save to database
       await axios.post(`${API}/leads`, formData);
+      
+      // Send email notification via Formspree
+      await axios.post(FORMSPREE_URL, {
+        name: formData.name,
+        email: formData.email,
+        trade: formData.trade,
+        areas: formData.areas,
+        message: formData.message,
+        _subject: `New Lead: ${formData.name} - ${formData.trade}`
+      });
+      
       setIsSuccess(true);
       toast.success("Message sent! We'll be in touch soon.");
       setFormData({
