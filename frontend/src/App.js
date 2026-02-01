@@ -39,6 +39,7 @@ function App() {
         <Toaster position="top-right" />
       </BrowserRouter>
     </div>
+    </HelmetProvider>
   );
 }
 
