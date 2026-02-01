@@ -1,0 +1,119 @@
+{
+  "design_system": {
+    "theme": "dark",
+    "typography": {
+      "font_family": {
+        "heading": "Oswald, sans-serif",
+        "body": "Inter, sans-serif"
+      },
+      "scale": {
+        "h1": "text-5xl md:text-7xl font-bold tracking-tight uppercase",
+        "h2": "text-4xl md:text-5xl font-bold tracking-tight uppercase",
+        "h3": "text-2xl md:text-3xl font-semibold uppercase",
+        "body": "text-base md:text-lg leading-relaxed text-zinc-400"
+      },
+      "imports": [
+        "@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;700&display=swap');"
+      ]
+    },
+    "colors": {
+      "background": "#0A0A0A",
+      "surface": "#121212",
+      "surface_highlight": "#1E1E1E",
+      "primary": "#FF5500",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#FFFFFF",
+      "text_main": "#FFFFFF",
+      "text_muted": "#A1A1AA",
+      "border": "#27272A",
+      "success": "#22C55E",
+      "error": "#EF4444"
+    },
+    "visual_enhancers": {
+      "border_radius": "rounded-none",
+      "shadows": {
+        "card": "0 0 0 1px rgba(255,255,255,0.1)",
+        "glow": "0 0 20px rgba(255, 85, 0, 0.3)"
+      },
+      "gradients": {
+        "hero_overlay": "linear-gradient(to right, #0A0A0A 40%, transparent 100%)",
+        "orange_glow": "radial-gradient(circle at center, rgba(255,85,0,0.15) 0%, transparent 70%)"
+      }
+    },
+    "layout": {
+      "container": "max-w-7xl mx-auto px-6 md:px-12",
+      "spacing": {
+        "section_padding": "py-24 md:py-32",
+        "element_gap": "gap-8"
+      },
+      "grid_system": "grid grid-cols-1 md:grid-cols-12 gap-8"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#FF5500] hover:bg-[#FF5500]/90 text-white font-bold uppercase tracking-wider px-8 py-4 rounded-none transition-all duration-300 hover:translate-y-[-2px]",
+      "secondary": "bg-transparent border border-white/20 text-white hover:bg-white hover:text-black font-bold uppercase tracking-wider px-8 py-4 rounded-none transition-all duration-300"
+    },
+    "cards": {
+      "service_card": "bg-[#121212] border border-white/10 p-8 hover:border-[#FF5500] transition-colors duration-300 group relative overflow-hidden",
+      "pricing_card": "bg-[#121212] border border-white/10 p-10 flex flex-col h-full relative",
+      "pricing_card_featured": "bg-[#121212] border border-[#FF5500] p-10 flex flex-col h-full relative shadow-[0_0_30px_rgba(255,85,0,0.15)]"
+    },
+    "inputs": {
+      "default": "bg-[#121212] border border-white/10 text-white placeholder:text-zinc-600 focus:border-[#FF5500] focus:ring-1 focus:ring-[#FF5500] rounded-none h-12 px-4"
+    }
+  },
+  "assets": {
+    "logo_url": "https://customer-assets.emergentagent.com/job_49426a61-5ab8-4cbe-bfda-9c03f92f563c/artifacts/17lnfwcm_logo.png",
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1718784386218-4851fa639e87?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "service_seo": "https://images.unsplash.com/photo-1645164242081-a37714c74be3?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "service_electrical": "https://images.unsplash.com/photo-1635335874521-7987db781153?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "abstract_bg": "https://images.unsplash.com/photo-1679447701487-722ce822928e?crop=entropy&cs=srgb&fm=jpg&q=85"
+    },
+    "icons": "Use lucide-react icons. Recommended: Wrench, Zap, BarChart3, ShieldCheck, MousePointer2, Phone"
+  },
+  "page_specifics": {
+    "home": {
+      "hero_section": {
+        "layout": "Split screen. Left: Typography & CTA. Right: Image with gradient overlay.",
+        "headline": "DOMINATE YOUR LOCAL MARKET.",
+        "subheadline": "Web Design & SEO for UK Tradespeople. No Contracts. Just Results.",
+        "cta_primary": "Get Free Audit",
+        "cta_secondary": "View Our Work"
+      },
+      "how_it_works": {
+        "layout": "3-step horizontal process with connecting lines.",
+        "steps": ["Audit", "Build", "Grow"]
+      }
+    },
+    "services": {
+      "layout": "Grid of cards. Each card has a large icon, title, and bullet points.",
+      "items": ["Local SEO", "Website Design", "PPC Ads", "Technical SEO"]
+    },
+    "pricing": {
+      "layout": "3 columns. Highlight 'Growth' plan.",
+      "plans": [
+        {"name": "Starter", "price": "£399", "features": ["5 Page Site", "Basic SEO"]},
+        {"name": "Growth", "price": "£150/mo", "features": ["Local SEO", "Blog Posts", "Reporting"], "highlight": true},
+        {"name": "Enterprise", "price": "Custom", "features": ["PPC Management", "National SEO"]}
+      ]
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. IMPLEMENT DARK MODE ONLY. Do not create a light mode toggle. The brand is strictly dark/industrial.",
+    "2. USE 'OSWALD' FONT FOR ALL HEADINGS. This is non-negotiable for the brand identity.",
+    "3. USE 'SAFETY ORANGE' (#FF5500) SPARINGLY. Only for buttons, hover states, and key highlights. Do not overuse.",
+    "4. IMAGES MUST BE DARKENED. When using the provided images, apply a CSS filter 'brightness-50' or 'brightness-75' if they are backgrounds, to ensure text readability.",
+    "5. NO ROUNDED CORNERS. Use 'rounded-none' for a sharp, industrial look. This appeals to tradespeople (precision, construction).",
+    "6. CONTACT FORM: Ensure it connects to the backend API to save leads to MongoDB.",
+    "7. ADMIN DASHBOARD: Create a simple protected route to view these leads.",
+    "8. NAVIGATION: Sticky header with glassmorphism (backdrop-blur-md bg-black/70)."
+  ],
+  "universal_guidelines": [
+    "Avoid generic centered layouts. Use asymmetry.",
+    "Use 2-3x more spacing than typical designs.",
+    "Every interaction needs micro-animations.",
+    "All interactive elements must have data-testid attributes."
+  ]
+}
