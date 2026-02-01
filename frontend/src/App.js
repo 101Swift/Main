@@ -10,6 +10,8 @@ import Pricing from "@/pages/Pricing";
 import Portfolio from "@/pages/Portfolio";
 import Contact from "@/pages/Contact";
 import Admin from "@/pages/Admin";
+import LocationPage from "@/pages/LocationPage";
+import IndustryPage from "@/pages/IndustryPage";
 
 function App() {
   return (
@@ -20,10 +22,12 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/services/:slug" element={<IndustryPage />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/admin" element={<Admin />} />
+            <Route path="/locations/:slug" element={<LocationPage />} />
           </Routes>
         </main>
         <Footer />
