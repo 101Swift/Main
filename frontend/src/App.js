@@ -1,5 +1,6 @@
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import { Toaster } from "@/components/ui/sonner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -16,10 +17,11 @@ import IndustryPage from "@/pages/IndustryPage";
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#0A0A0A]">
-      <BrowserRouter>
-        <ScrollToTop />
-        <Navbar />
+    <HelmetProvider>
+      <div className="min-h-screen bg-[#0A0A0A]">
+        <BrowserRouter>
+          <ScrollToTop />
+          <Navbar />
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
