@@ -1971,7 +1971,7 @@ const babelMetadataPlugin = ({ types: t }) => {
 
           // If no expression children, check if we're in array iteration context
           if (!sourceInfo) {
-            const iterContext = getArrayIterationContext(parentElement, state);
+            const iterContext = getArrayIterationContext(parentElement, state, 0);
             if (iterContext) {
               arrayContext = iterContext;
               sourceInfo = {
