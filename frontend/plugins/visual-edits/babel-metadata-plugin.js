@@ -648,7 +648,8 @@ const babelMetadataPlugin = ({ types: t }) => {
       }
 
       // Analyze the root identifier
-      const rootInfo = analyzeIdentifier(rootName, exprPath, state);
+      // Pass skipArrayContext to prevent infinite recursion when called from getArrayIterationContext
+      const rootInfo = analyzeIdentifier(rootName, exprPath, state, { skipArrayContext });
       if (rootInfo) {
         return {
           ...rootInfo,
