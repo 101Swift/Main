@@ -100,6 +100,11 @@ export default function Contact() {
 
   return (
     <div className="bg-[#0A0A0A] pt-20" data-testid="contact-page">
+      <SEO 
+        title="Contact Us - Get a Free Consultation"
+        description="Get in touch for a free consultation. We will review your business and provide a clear plan to grow your online presence."
+        canonical="/contact"
+      />
       {/* Hero Section */}
       <section className="py-24 md:py-32 border-b border-white/10" data-testid="contact-hero">
         <div className="max-w-7xl mx-auto px-6 md:px-12">

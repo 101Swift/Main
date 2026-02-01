@@ -82,6 +82,11 @@ const howItWorks = [
 export default function Pricing() {
   return (
     <div className="bg-[#0A0A0A] pt-20" data-testid="pricing-page">
+      <SEO 
+        title="Pricing - Web Design & SEO Packages"
+        description="Simple, transparent pricing for website design and SEO services. From £399.99 one-off setup to £150/month growth packages. No long-term contracts."
+        canonical="/pricing"
+      />
       {/* Hero Section */}
       <section className="py-24 md:py-32 border-b border-white/10" data-testid="pricing-hero">
         <div className="max-w-7xl mx-auto px-6 md:px-12 text-center">

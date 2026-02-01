@@ -39,6 +39,11 @@ const portfolioItems = [
 export default function Portfolio() {
   return (
     <div className="bg-[#0A0A0A] pt-20" data-testid="portfolio-page">
+      <SEO 
+        title="Our Work - Website Design Portfolio"
+        description="See examples of websites we have built for UK businesses. From electricians to restaurants, we create websites that rank and convert."
+        canonical="/portfolio"
+      />
       {/* Hero Section */}
       <section className="py-24 md:py-32 border-b border-white/10" data-testid="portfolio-hero">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
