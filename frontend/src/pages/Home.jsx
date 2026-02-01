@@ -74,7 +74,7 @@ export default function Home() {
           <img 
             src={HERO_BG} 
             alt="" 
-            className="w-full h-full object-cover brightness-[0.3] blur-sm"
+            className="w-full h-full object-cover brightness-[0.3] blur-md"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent" />
         </div>
