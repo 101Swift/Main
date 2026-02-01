@@ -28,8 +28,13 @@ const trades = [
 ];
 
 const areas = [
-  "London", "Reading", "Guildford", "Oxford", 
-  "Milton Keynes", "Brighton", "Bournemouth"
+  { name: "London", slug: "london" },
+  { name: "Reading", slug: "reading" },
+  { name: "Guildford", slug: "guildford" },
+  { name: "Oxford", slug: "oxford" },
+  { name: "Milton Keynes", slug: "milton-keynes" },
+  { name: "Brighton", slug: "brighton" },
+  { name: "Bournemouth", slug: "bournemouth" },
 ];
 
 const howItWorks = [
