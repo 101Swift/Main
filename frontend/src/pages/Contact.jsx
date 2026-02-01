@@ -107,7 +107,7 @@ export default function Contact() {
               Contact
             </span>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight uppercase text-white mb-6">
-              Get a Free Audit
+              Get a Free Consultation
             </h1>
             <p className="text-lg md:text-xl text-zinc-400 leading-relaxed">
               Send the details below and we'll reply with next steps.

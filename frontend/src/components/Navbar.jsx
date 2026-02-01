@@ -58,7 +58,7 @@ export default function Navbar() {
                 data-testid="nav-cta-button"
                 className="bg-[#FF5500] hover:bg-[#FF5500]/90 text-white font-bold uppercase tracking-wider px-6 py-2 rounded-none transition-all duration-300 hover:translate-y-[-2px]"
               >
-                Get Free Audit
+                Get Free Consultation
               </Button>
             </Link>
           </div>
@@ -97,7 +97,7 @@ export default function Navbar() {
                   data-testid="mobile-cta-button"
                   className="w-full bg-[#FF5500] hover:bg-[#FF5500]/90 text-white font-bold uppercase tracking-wider px-6 py-3 rounded-none mt-4"
                 >
-                  Get Free Audit
+                  Get Free Consultation
                 </Button>
               </Link>
             </div>

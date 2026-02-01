@@ -100,7 +100,7 @@ export default function LocationPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/contact">
                 <Button className="bg-[#FF5500] hover:bg-[#FF5500]/90 text-white font-bold uppercase tracking-wider px-8 py-6 rounded-none transition-all duration-300 hover:translate-y-[-2px]">
-                  Get a Free {location.name} Audit
+                  Get a Free Consultation
                 </Button>
               </Link>
               <Link to="/pricing">
@@ -207,11 +207,11 @@ export default function LocationPage() {
             Ready to Grow in {location.name}?
           </h2>
           <p className="text-zinc-400 text-lg mb-8 max-w-2xl mx-auto">
-            Get a free audit and see how we can help your {location.name} business get more customers from Google.
+            Get a free consultation and see how we can help your {location.name} business get more customers from Google.
           </p>
           <Link to="/contact">
             <Button className="bg-[#FF5500] hover:bg-[#FF5500]/90 text-white font-bold uppercase tracking-wider px-10 py-6 rounded-none transition-all duration-300 hover:translate-y-[-2px]">
-              Get Your Free {location.name} Audit
+              Get Your Free Consultation
             </Button>
           </Link>
         </div>

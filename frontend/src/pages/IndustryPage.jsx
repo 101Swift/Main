@@ -170,7 +170,7 @@ export default function IndustryPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/contact">
                 <Button className="bg-[#FF5500] hover:bg-[#FF5500]/90 text-white font-bold uppercase tracking-wider px-8 py-6 rounded-none transition-all duration-300 hover:translate-y-[-2px]">
-                  Get a Free Audit
+                  Get a Free Consultation
                 </Button>
               </Link>
               <Link to="/pricing">
@@ -279,11 +279,11 @@ export default function IndustryPage() {
             Ready to Grow Your {industry.name} Business?
           </h2>
           <p className="text-zinc-400 text-lg mb-8 max-w-2xl mx-auto">
-            Get a free audit and see how we can help you attract more customers from Google.
+            Get a free consultation and see how we can help you attract more customers from Google.
           </p>
           <Link to="/contact">
             <Button className="bg-[#FF5500] hover:bg-[#FF5500]/90 text-white font-bold uppercase tracking-wider px-10 py-6 rounded-none transition-all duration-300 hover:translate-y-[-2px]">
-              Get Your Free Audit
+              Get Your Free Consultation
             </Button>
           </Link>
         </div>

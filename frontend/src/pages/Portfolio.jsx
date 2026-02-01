@@ -138,7 +138,7 @@ export default function Portfolio() {
             Want Results Like These?
           </h2>
           <p className="text-zinc-400 text-lg mb-8 max-w-2xl mx-auto">
-            Get a free audit and see how we can help grow your business.
+            Get a free consultation and see how we can help grow your business.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link to="/contact">
@@ -146,7 +146,7 @@ export default function Portfolio() {
                 data-testid="portfolio-cta-primary"
                 className="bg-[#FF5500] hover:bg-[#FF5500]/90 text-white font-bold uppercase tracking-wider px-10 py-6 rounded-none transition-all duration-300 hover:translate-y-[-2px]"
               >
-                Get a Free Audit
+                Get a Free Consultation
               </Button>
             </Link>
             <Link to="/pricing">

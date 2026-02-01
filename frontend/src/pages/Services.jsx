@@ -127,7 +127,7 @@ export default function Services() {
                   data-testid="services-cta-primary"
                   className="bg-[#FF5500] hover:bg-[#FF5500]/90 text-white font-bold uppercase tracking-wider px-8 py-6 rounded-none transition-all duration-300 hover:translate-y-[-2px]"
                 >
-                  Get a Free Audit
+                  Get a Free Consultation
                 </Button>
               </Link>
               <Link to="/pricing">
@@ -241,7 +241,7 @@ export default function Services() {
             Ready to Get Started?
           </h2>
           <p className="text-zinc-400 text-lg mb-8 max-w-2xl mx-auto">
-            Get a free audit and a simple plan to grow your business online.
+            Get a free consultation and a simple plan to grow your business online.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link to="/contact">
@@ -249,7 +249,7 @@ export default function Services() {
                 data-testid="services-bottom-cta-primary"
                 className="bg-[#FF5500] hover:bg-[#FF5500]/90 text-white font-bold uppercase tracking-wider px-10 py-6 rounded-none transition-all duration-300 hover:translate-y-[-2px]"
               >
-                Get a Free Audit
+                Get a Free Consultation
               </Button>
             </Link>
             <Link to="/pricing">

@@ -103,7 +103,7 @@ export default function Home() {
                   data-testid="hero-cta-primary"
                   className="bg-[#FF5500] hover:bg-[#FF5500]/90 text-white font-bold uppercase tracking-wider px-8 py-6 rounded-none transition-all duration-300 hover:translate-y-[-2px] text-base"
                 >
-                  Get a Free Audit
+                  Get a Free Consultation
                 </Button>
               </Link>
               <Link to="/pricing">
@@ -295,14 +295,14 @@ export default function Home() {
             Ready to Get More Enquiries?
           </h2>
           <p className="text-zinc-400 text-lg mb-8 max-w-2xl mx-auto">
-            Get a free audit and a simple plan to grow your business online.
+            Get a free consultation and a simple plan to grow your business online.
           </p>
           <Link to="/contact">
             <Button 
               data-testid="cta-button"
               className="bg-[#FF5500] hover:bg-[#FF5500]/90 text-white font-bold uppercase tracking-wider px-10 py-6 rounded-none transition-all duration-300 hover:translate-y-[-2px] text-base"
             >
-              Get a Free Audit
+              Get a Free Consultation
             </Button>
           </Link>
         </div>
