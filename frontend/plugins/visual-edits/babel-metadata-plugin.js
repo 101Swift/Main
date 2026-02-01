@@ -609,7 +609,7 @@ const babelMetadataPlugin = ({ types: t }) => {
   /**
    * Analyzes a member expression like item.name or obj.prop.value
    */
-  function analyzeMemberExpression(exprPath, state) {
+  function analyzeMemberExpression(exprPath, state, skipArrayContext = false) {
     const node = exprPath.node;
 
     // Build the property path (e.g., "name" or "address.city")
@@ -627,21 +627,24 @@ const babelMetadataPlugin = ({ types: t }) => {
       const rootName = rootObj.name;
 
       // Check if we're inside an array iteration (like .map())
-      const arrayContext = getArrayIterationContext(exprPath, state, 0);
+      // Skip this check if called from getArrayIterationContext to prevent infinite recursion
+      if (!skipArrayContext) {
+        const arrayContext = getArrayIterationContext(exprPath, state, 0);
 
-      if (arrayContext && arrayContext.itemParam === rootName) {
-        // This is item.property where item comes from array.map(item => ...)
-        return {
-          type: "static-imported",
-          varName: arrayContext.arrayVar,
-          file: arrayContext.arrayFile,
-          absFile: arrayContext.absFile,
-          line: arrayContext.arrayLine,
-          path: propPath,
-          isEditable: arrayContext.isEditable,
-          valueType: "array-item",
-          arrayContext: arrayContext,
-        };
+        if (arrayContext && arrayContext.itemParam === rootName) {
+          // This is item.property where item comes from array.map(item => ...)
+          return {
+            type: "static-imported",
+            varName: arrayContext.arrayVar,
+            file: arrayContext.arrayFile,
+            absFile: arrayContext.absFile,
+            line: arrayContext.arrayLine,
+            path: propPath,
+            isEditable: arrayContext.isEditable,
+            valueType: "array-item",
+            arrayContext: arrayContext,
+          };
+        }
       }
 
       // Analyze the root identifier
