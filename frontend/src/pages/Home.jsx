@@ -18,11 +18,12 @@ import {
 const HERO_BG = "https://images.unsplash.com/photo-1718784386218-4851fa639e87?crop=entropy&cs=srgb&fm=jpg&q=85";
 
 const trades = [
-  { icon: Wrench, name: "Home Services", desc: "Local enquiries for home service businesses." },
-  { icon: Zap, name: "Professional Services", desc: "Rank for high-intent professional searches." },
-  { icon: Hammer, name: "Retail & E-commerce", desc: "Visibility for local retail and online stores." },
-  { icon: Flame, name: "Health & Wellness", desc: "Maps and search visibility for health businesses." },
-  { icon: TreeDeciduous, name: "Food & Hospitality", desc: "Enquiries for restaurants, cafes and hospitality." },
+  { icon: Wrench, name: "Home Services & Trades", desc: "Plumbers, electricians, builders, and home service providers.", slug: "home-services" },
+  { icon: Zap, name: "Professional Services", desc: "Accountants, lawyers, consultants and B2B services.", slug: "professional-services" },
+  { icon: Hammer, name: "Retail & E-commerce", desc: "Local shops, boutiques and online stores.", slug: "retail" },
+  { icon: Flame, name: "Health & Wellness", desc: "Dentists, clinics, gyms and wellness centres.", slug: "health-wellness" },
+  { icon: TreeDeciduous, name: "Food & Hospitality", desc: "Restaurants, cafes, hotels and catering.", slug: "food-hospitality" },
+  { icon: Building2, name: "Beauty & Personal Care", desc: "Salons, spas, barbers and beauty services.", slug: "beauty" },
 ];
 
 const areas = [
