@@ -116,10 +116,10 @@ export default function Services() {
             </span>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight uppercase text-white mb-6">
               SEO Services<br />
-              <span className="text-[#FF5500]">For Trades</span>
+              <span className="text-[#FF5500]">For Local Businesses</span>
             </h1>
             <p className="text-lg md:text-xl text-zinc-400 mb-8 leading-relaxed">
-              Local SEO, technical fixes, and pages built to turn clicks into enquiries.
+              Local SEO, technical fixes, and pages built to turn clicks into customers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/contact">

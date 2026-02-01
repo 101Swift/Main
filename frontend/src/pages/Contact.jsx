@@ -19,14 +19,14 @@ const API = `${BACKEND_URL}/api`;
 const FORMSPREE_URL = "https://formspree.io/f/xqelqeel";
 
 const trades = [
-  "Plumber",
-  "Electrician",
-  "Builder",
-  "Heating Engineer",
-  "Landscaper",
-  "Roofer",
-  "Painter & Decorator",
-  "Carpenter",
+  "Restaurant / Cafe",
+  "Retail Store",
+  "Professional Services",
+  "Health & Wellness",
+  "Home Services",
+  "Beauty & Salon",
+  "Fitness / Gym",
+  "Automotive",
   "Other"
 ];
 
@@ -174,14 +174,14 @@ export default function Contact() {
 
                   <div>
                     <Label htmlFor="trade" className="text-white text-sm font-medium uppercase tracking-wider mb-2 block">
-                      Trade
+                      Business Type
                     </Label>
                     <Select value={formData.trade} onValueChange={handleTradeChange}>
                       <SelectTrigger 
                         className="bg-[#121212] border border-white/10 text-white focus:border-[#FF5500] focus:ring-1 focus:ring-[#FF5500] rounded-none h-12"
                         data-testid="select-trade"
                       >
-                        <SelectValue placeholder="Select your trade" />
+                        <SelectValue placeholder="Select your business type" />
                       </SelectTrigger>
                       <SelectContent className="bg-[#121212] border border-white/10">
                         {trades.map((trade) => (

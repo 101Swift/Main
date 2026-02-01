@@ -18,11 +18,11 @@ import {
 const HERO_BG = "https://images.unsplash.com/photo-1718784386218-4851fa639e87?crop=entropy&cs=srgb&fm=jpg&q=85";
 
 const trades = [
-  { icon: Wrench, name: "Plumbers", desc: "Local enquiries for emergency and planned plumbing work." },
-  { icon: Zap, name: "Electricians", desc: "Rank for high-intent electrical searches." },
-  { icon: Hammer, name: "Builders", desc: "Visibility for building, extension and renovation work." },
-  { icon: Flame, name: "Heating Engineers", desc: "Maps and search visibility for heating jobs." },
-  { icon: TreeDeciduous, name: "Landscapers", desc: "Enquiries for landscaping and outdoor work." },
+  { icon: Wrench, name: "Home Services", desc: "Local enquiries for home service businesses." },
+  { icon: Zap, name: "Professional Services", desc: "Rank for high-intent professional searches." },
+  { icon: Hammer, name: "Retail & E-commerce", desc: "Visibility for local retail and online stores." },
+  { icon: Flame, name: "Health & Wellness", desc: "Maps and search visibility for health businesses." },
+  { icon: TreeDeciduous, name: "Food & Hospitality", desc: "Enquiries for restaurants, cafes and hospitality." },
 ];
 
 const areas = [
@@ -76,7 +76,7 @@ export default function Home() {
           <div className="max-w-3xl">
             <div className="inline-block mb-6 opacity-0 animate-slide-up">
               <span className="text-[#FF5500] text-sm font-medium uppercase tracking-widest">
-                SEO For Trades
+                SEO For Local Businesses
               </span>
             </div>
             
@@ -86,8 +86,8 @@ export default function Home() {
             </h1>
             
             <p className="text-lg md:text-xl text-zinc-400 mb-8 leading-relaxed max-w-xl opacity-0 animate-slide-up delay-200">
-              We help plumbers, electricians, builders, heating engineers, landscapers, and other trades 
-              get found on Google and turn clicks into enquiries.
+              We help local businesses get found on Google and turn clicks into customers. 
+              From restaurants to retail, professional services to home services.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8 opacity-0 animate-slide-up delay-300">
@@ -206,15 +206,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trades We Work With */}
+      {/* Businesses We Work With */}
       <section className="py-24 md:py-32 border-t border-white/10" data-testid="trades-section">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center mb-16">
             <span className="text-[#FF5500] text-sm font-medium uppercase tracking-widest mb-4 block">
-              Trades We Work With
+              Businesses We Work With
             </span>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight uppercase text-white mb-4">
-              Trade Pages Built to Rank
+              Pages Built to Rank & Convert
             </h2>
           </div>
 

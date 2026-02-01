@@ -19,7 +19,7 @@ export default function Footer() {
               <span className="text-white font-medium">Website & SEO Services</span>
             </Link>
             <p className="text-zinc-400 text-sm leading-relaxed mb-6 max-w-md">
-              We help tradespeople get found on Google and turn clicks into enquiries. 
+              We help local businesses get found on Google and turn clicks into customers. 
               No long-term contracts. Cancel anytime.
             </p>
             <div className="flex flex-col gap-3">
