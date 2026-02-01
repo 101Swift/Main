@@ -801,7 +801,7 @@ const babelMetadataPlugin = ({ types: t }) => {
 
       // Analyze the expression being passed
       const sourceInfo = analyzeExpression(valuePath, state);
-      const arrayContext = getArrayIterationContext(valuePath, state);
+      const arrayContext = getArrayIterationContext(valuePath, state, 0);
 
       // Cache it
       const cacheKey = `${componentAbsPath}::${componentName}::${propName}`;
