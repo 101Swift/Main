@@ -63,6 +63,7 @@ export default function Admin() {
 
   useEffect(() => {
     fetchLeads();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filter]);
 
   const updateStatus = async (leadId, newStatus) => {
