@@ -68,6 +68,11 @@ const features = [
 export default function Home() {
   return (
     <div className="bg-[#0A0A0A]" data-testid="home-page">
+      <SEO 
+        title="Web Design & Local SEO for UK Businesses"
+        description="We help local businesses dominate Google search and get more customers. Professional website design and SEO services. No contracts, cancel anytime."
+        canonical="/"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center pt-20" data-testid="hero-section">
         {/* Background Image */}
