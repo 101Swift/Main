@@ -81,6 +81,11 @@ export default function LocationPage() {
 
   return (
     <div className="bg-[#0A0A0A] pt-20" data-testid="location-page">
+      <SEO 
+        title={`SEO Services in ${location.name} - Local SEO Agency`}
+        description={`Professional SEO and web design services in ${location.name}. We help ${location.name} businesses rank higher on Google and get more local customers.`}
+        canonical={`/locations/${slug}`}
+      />
       {/* Hero Section */}
       <section className="py-24 md:py-32 border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 md:px-12">

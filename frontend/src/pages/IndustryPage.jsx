@@ -154,6 +154,11 @@ export default function IndustryPage() {
 
   return (
     <div className="bg-[#0A0A0A] pt-20" data-testid="industry-page">
+      <SEO 
+        title={`${industry.name} SEO Services - Web Design & Local SEO`}
+        description={`Specialist SEO and website design for ${industry.name.toLowerCase()} businesses. Get more customers from Google with our proven local SEO strategies.`}
+        canonical={`/services/${slug}`}
+      />
       {/* Hero Section */}
       <section className="py-24 md:py-32 border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
