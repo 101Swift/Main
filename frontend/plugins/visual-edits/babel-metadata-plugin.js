@@ -1813,7 +1813,7 @@ const babelMetadataPlugin = ({ types: t }) => {
 
           // If no expression children, check if we're in array iteration context
           if (!sourceInfo) {
-            const iterContext = getArrayIterationContext(jsxPath, state);
+            const iterContext = getArrayIterationContext(jsxPath, state, 0);
             if (iterContext) {
               arrayContext = iterContext;
               sourceInfo = {
