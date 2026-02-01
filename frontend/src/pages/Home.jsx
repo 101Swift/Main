@@ -16,7 +16,7 @@ import {
   ArrowRight
 } from "lucide-react";
 
-const HERO_BG = "https://images.unsplash.com/photo-1718784386218-4851fa639e87?crop=entropy&cs=srgb&fm=jpg&q=85";
+const HERO_BG = "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&q=85";
 
 const trades = [
   { icon: Wrench, name: "Home Services & Trades", desc: "Plumbers, electricians, builders, and home service providers.", slug: "home-services" },
