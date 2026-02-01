@@ -88,6 +88,30 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+
+          {/* Resources */}
+          <div>
+            <h4 className="text-white font-semibold uppercase tracking-wider mb-6 text-sm">
+              Resources
+            </h4>
+            <ul className="space-y-3">
+              {[
+                { name: "Free Website Audit", path: "/free-website-audit" },
+                { name: "Website Design Cost", path: "/website-design-cost" },
+                { name: "SEO vs PPC", path: "/seo-vs-ppc" },
+                { name: "Blog", path: "/blog" },
+              ].map((link) => (
+                <li key={link.path}>
+                  <Link 
+                    to={link.path} 
+                    className="text-zinc-400 hover:text-[#FF5500] transition-colors text-sm"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         {/* Bottom Bar */}
