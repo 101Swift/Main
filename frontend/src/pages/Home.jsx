@@ -9,6 +9,7 @@ import {
   Hammer, 
   Flame, 
   TreeDeciduous,
+  Building2,
   BarChart3,
   Search,
   MousePointerClick,
