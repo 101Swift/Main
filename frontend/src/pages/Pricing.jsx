@@ -15,12 +15,26 @@ const plans = [
     name: "Website + SEO Setup",
     price: "£399.99",
     period: "One-off",
-    desc: "Best if you need a clean foundation that can rank.",
+    desc: "Best if you need a new website that's built to rank.",
     features: [
       "Fast, responsive website build",
       "On-page SEO structure (titles, headings, internal linking)",
       "Technical basics (indexing signals, sitemap/crawl hygiene)",
       "Tracking setup so you can measure enquiries"
+    ],
+    popular: false
+  },
+  {
+    name: "SEO Setup Only",
+    price: "£249.99",
+    period: "One-off",
+    desc: "Already have a website? We'll optimise it for Google.",
+    features: [
+      "Full SEO audit of your existing site",
+      "On-page optimisation (titles, metas, headings)",
+      "Technical SEO fixes",
+      "Google Business Profile setup/optimisation",
+      "Tracking and analytics setup"
     ],
     popular: false
   },
