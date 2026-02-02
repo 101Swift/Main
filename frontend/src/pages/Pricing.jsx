@@ -152,12 +152,12 @@ export default function Pricing() {
               Plans
             </span>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight uppercase text-white">
-              Two Clear Options
+              Choose Your Starting Point
             </h2>
-            <p className="text-zinc-400 mt-4">Add-ons are optional.</p>
+            <p className="text-zinc-400 mt-4">One-off setup + optional monthly growth. Add-ons available.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {plans.map((plan, index) => (
               <div 
                 key={plan.name}
