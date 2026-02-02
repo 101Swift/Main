@@ -208,7 +208,7 @@ export default function Pricing() {
           </div>
 
           <p className="text-center text-zinc-400 text-sm mt-8">
-            Typical path: <span className="text-white">£399.99</span> setup → then optional <span className="text-white">£150/month</span> growth. No long-term contracts. Cancel anytime.
+            <span className="text-white">New website?</span> £399.99 setup. <span className="text-white">Got a website?</span> £249.99 SEO setup. Then optional <span className="text-white">£150/month</span> growth.
           </p>
         </div>
       </section>
